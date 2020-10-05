@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "organizationName": {
+            "value": "lf1020" 
+        },
+        "storageAcountName":{
+            "value": "lf1020stg"
+        },
+        "resourceLocation": {
+            "value": "northeurope" 
+        },
+        "objectIdForAccessPolicy": {
+            "value": "6dd8c035-74a1-41f1-bcf4-8d01c12b1819"
+        },
+        "deniedResourceTypes": {
+            "value": [
+                "Microsoft.Automation/automationAccounts"
+            ]
+        },
+        "costCenterTagName": {
+            "value": "costcenter"
+        },
+        "costCenterTagValue": {
+            "value": "sandbox" 
+        },
+        "allowedStorageSkus": {
+            "value": [
+                "Standard_GRS",
+                "Standard_LRS"
+            ]
+        }
+    }
+}
